@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script type='text/javascript' src="../src/common/ajax.js"></script>
+<script>
+  ajax({
+    type:"get",
+    url:"http://grow.iciba.com/grow/web/popup?type=1&_=1581419415745", //添加自己的接口链接
+    timeOut:5000,
+    before:function(){
+      console.log("before");
+    },
+    success:function (e) {
+      console.log(e)
+      console.log(e.message.data.content);
+    },
+    error:function(){
+      console.log("error");
+    },
+    dataType:	"jsonp"
+  });
+  // console.log(jsonp3);
+</script>
+
+</body>
+</html>
