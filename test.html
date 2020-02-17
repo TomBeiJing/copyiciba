@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div
+    {
+      width:100px;
+      height:100px;
+      background:red;
+      position:relative;
+      /*animation:bounceInLeft 1s ease;*/
+      /*-webkit-animation-name: bounceInLeft;*/
+      /*animation-name: bounceInLeft;*/
+    }
+
+    @-webkit-keyframes bounceInLeft {
+
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+      }
+
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes bounceInLeft {
+
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+      }
+
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    /*@keyframes myfirst*/
+    /*{*/
+    /*0%   {background:red; left:0px; }*/
+    /*!*25%  {background:yellow; left:200px; top:0px;}*!*/
+    /*100%  {background:blue; left:200px;}*/
+    /*!*75%  {background:green; left:0px; top:200px;}*!*/
+    /*!*100% {background:red; left:0px; top:0px;}*!*/
+    /*}*/
+  .Bigbox2{
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+  }
+    .Bigbox2 div{
+      float: left;
+    }
+  .box2{
+    width: 100px;
+    height: 100px;
+    background-color: #ff5777;
+  }
+
+  .box3{
+    width: 100px;
+    height: 100px;
+    background-color: #99ffa0;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="bounceInLeft"></div>
+  <div class="Bigbox2">
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+  </div>
+  <!--<div class="box3"></div>-->
+</body>
+</html>
